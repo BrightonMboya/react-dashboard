@@ -32,7 +32,7 @@ const Customers = () => {
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Page,Toolbar, Selection, Edit, Sort, Filter]} />
+        <Inject services={[Page,Toolbar]} />
       </GridComponent>
     </div>
   );

@@ -12,7 +12,7 @@ import {
   Filter,
 } from "@syncfusion/ej2-react-grids";
 
-import { customersData, customersGrid } from "../data/dummy";
+import { customersData, customerGrid } from "../data/dummy";
 import { Header } from "../Components";
 
 const Customers = () => {
@@ -23,16 +23,15 @@ const Customers = () => {
         dataSource={customersData}
         allowPaging
         allowSorting
-        toolbar={["Delete"]}
-        editSettings={{allowDeleting: true, allowEditing: true}}
+        toolbar={["Search"]}
         width="auto"
       >
         <ColumnsDirective>
-          {customersGrid.map((item, index) => (
+          {customerGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Page,Toolbar, Selection, Edit, Sort, Filter]} />
+        <Inject services={[Page,Toolbar]} />
       </GridComponent>
     </div>
   );
