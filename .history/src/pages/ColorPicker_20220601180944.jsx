@@ -2,10 +2,6 @@ import React from 'react'
 import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs'
 import { Header } from '../Components'
 
-const change = (args) => {
-  document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
-}
-
 const ColorPicker = () => {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
@@ -16,24 +12,22 @@ const ColorPicker = () => {
           <div>
             <p className='text-2xl mt-2 mb-4 font-semibold'>Inline Pallet</p>
             <ColorPickerComponent
-            id="inline-pallete"
-            mode="Palette"
+            id="inline-pallet"
+            mode="Palete"
             modeSwitcher={false}
             inline
             showButtons={false}
-            change={change}
             />
           </div>
 
           <div>
             <p className='text-2xl mt-2 mb-4 font-semibold'>Inline Picker</p>
             <ColorPickerComponent
-            id="inline-pallete"
+            id="inline-pallet"
             mode="Picker"
             modeSwitcher={false}
             inline
             showButtons={false}
-            change={change}
             />
           </div>
 

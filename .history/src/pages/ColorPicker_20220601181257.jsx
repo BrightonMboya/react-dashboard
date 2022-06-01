@@ -21,7 +21,6 @@ const ColorPicker = () => {
             modeSwitcher={false}
             inline
             showButtons={false}
-            change={change}
             />
           </div>
 
@@ -33,7 +32,6 @@ const ColorPicker = () => {
             modeSwitcher={false}
             inline
             showButtons={false}
-            change={change}
             />
           </div>
 
